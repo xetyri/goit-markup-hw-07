@@ -1,0 +1,23 @@
+.logotype {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  margin-right: 93px;
+}
+
+.logotype-light-theme {
+  color: var(--color-logo);
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logotype-dark-theme {
+  color: var(--color-main);
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.logo-Web {
+  color: var(--accent-color);
+}
