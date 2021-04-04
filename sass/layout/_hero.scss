@@ -12,24 +12,24 @@
   margin-right: auto;
   margin-left: auto;
   background-color: var(--color-secondary);
-}
 
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--color-main);
-  margin-bottom: 30px;
-  padding-left: 237px;
-  padding-right: 237px;
-  text-align: center;
+  &__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--color-main);
+    margin-bottom: 30px;
+    padding-left: 237px;
+    padding-right: 237px;
+    text-align: center;
+  }
 }
