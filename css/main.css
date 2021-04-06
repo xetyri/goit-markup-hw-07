@@ -192,30 +192,6 @@ img {
   padding: 40px;
 }
 
-.modal__close-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 30px;
-  height: 30px;
-  background: var(--color-main);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-}
-
-.modal__close-icon {
-  transition-property: all;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__close-btn:hover .modal__close-icon,
-.modal__close-btn:focus .modal__close-icon {
-  fill: var(--accent-color);
-}
-
 .modal__title {
   font-weight: 700;
   font-size: 20px;
@@ -280,12 +256,12 @@ img {
 }
 
 .modal-form__user-message {
-  height: 138px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .modal-form__user-title {
-  height: 14px;
+  display: block;
+  margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
@@ -299,7 +275,6 @@ img {
   border-radius: 4px;
   padding: 12px 16px;
   resize: none;
-  margin-top: 4px;
   transition-property: all;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -311,6 +286,10 @@ img {
 .modal-form__message:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+
+.modal-form__term {
+  cursor: pointer;
 }
 
 .modal-form__check-desc {
@@ -358,6 +337,31 @@ img {
 
 .modal-form__link {
   color: var(--accent-color);
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background: var(--color-main);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.close-btn__icon {
+  transition-property: all;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover .close-btn__icon,
+.close-btn:focus .close-btn__icon {
+  fill: var(--accent-color);
 }
 
 .header {
